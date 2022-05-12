@@ -1,0 +1,61 @@
+.game-of-life {
+    &__title {
+        color: #000;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    &__board {
+        display: grid;
+        gap: 1px;
+    }
+
+    &__cell {
+        &--filled {
+            background-color: black;
+        }
+
+        &--empty {
+            background-color: #ececec;
+        }
+    }
+
+    &__button {
+        padding: 4px 15px;
+        margin: 0 6px 6px 0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+
+        &--run {
+            background-color: green;
+        }
+
+        &--stop {
+            background-color: red;
+        }
+
+        &--reload {
+            margin-left: 15px;
+            background-color: gray;
+        }
+    }
+
+    &__modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+
+        &-message {
+            color: black;
+            font-weight: 500;
+            font-size: 24px;
+            background-color: lightgray;
+            border-radius: 15px;
+        }
+    }
+}
